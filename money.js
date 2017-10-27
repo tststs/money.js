@@ -12,6 +12,11 @@
  */
 (function(root, undefined) {
 
+	if (root === undefined) {
+
+		root = window;
+	}
+
 	// Create a safe reference to the money.js object for use below.
 	var fx = function(obj) {
 		return new fxWrapper(obj);
